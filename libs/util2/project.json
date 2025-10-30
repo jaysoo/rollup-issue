@@ -1,0 +1,26 @@
+{
+  "name": "util2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/util2/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/util2",
+        "main": "libs/util2/src/index.ts",
+        "tsConfig": "libs/util2/tsconfig.lib.json",
+        "assets": ["libs/util2/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/util2/jest.config.ts"
+      }
+    }
+  }
+}

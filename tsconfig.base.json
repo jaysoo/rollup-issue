@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-rollup-legacy/foo": ["libs/foo/src/index.ts"],
+      "@nx-rollup-legacy/bar": ["libs/bar/src/index.ts"],
+      "@nx-rollup-legacy/util": ["libs/util/src/index.ts"],
+      "@nx-rollup-legacy/util2": ["libs/util2/src/index.ts"],
+      "@nx-rollup-legacy/util3": ["libs/util3/src/index.ts"],
+      "@nx-rollup-legacy/bar2": ["libs/bar2/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
